@@ -20,7 +20,7 @@
           <mxGeometry x="59.13" y="338" width="47" height="47" as="geometry" />
         </mxCell>
         <mxCell id="teR93byTSqqBIhb2rqv4-11" value="Cognito" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-1">
-          <mxGeometry x="274" y="316" width="66" height="29" as="geometry" />
+          <mxGeometry x="274" y="397" width="66" height="29" as="geometry" />
         </mxCell>
         <mxCell id="teR93byTSqqBIhb2rqv4-14" value="CloudFront" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-1">
           <mxGeometry x="43.129999999999995" y="395" width="87" height="29" as="geometry" />
@@ -66,7 +66,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="teR93byTSqqBIhb2rqv4-25" value="AWS WAF" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-1">
-          <mxGeometry x="122" y="305" width="84" height="29" as="geometry" />
+          <mxGeometry x="158" y="395" width="84" height="29" as="geometry" />
         </mxCell>
         <mxCell id="teR93byTSqqBIhb2rqv4-26" value="DNS Resolution" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-1">
           <mxGeometry x="24" y="175" width="118" height="29" as="geometry" />
@@ -92,7 +92,7 @@
         <mxCell id="teR93byTSqqBIhb2rqv4-133" value="Budgets" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-1">
           <mxGeometry x="192" y="799" width="69" height="29" as="geometry" />
         </mxCell>
-        <mxCell id="teR93byTSqqBIhb2rqv4-134" value="Cost Management&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-1">
+        <mxCell id="teR93byTSqqBIhb2rqv4-134" value="&lt;div&gt;Gerenciamento de Custos&lt;/div&gt;" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-1">
           <mxGeometry x="41.13" y="758" width="273" height="153" as="geometry" />
         </mxCell>
         <mxCell id="teR93byTSqqBIhb2rqv4-135" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.shield;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-1">
