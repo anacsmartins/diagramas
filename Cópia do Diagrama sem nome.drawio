@@ -469,6 +469,12 @@
         <mxCell id="6cjDt4a6pdJpIaDc60JG-115" value="Worker Rate Limiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
           <mxGeometry x="576" y="450" width="141" height="29" as="geometry" />
         </mxCell>
+        <mxCell id="6cjDt4a6pdJpIaDc60JG-116" value="Firehose" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
+          <mxGeometry x="1300" y="874" width="72" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="6cjDt4a6pdJpIaDc60JG-117" value="Firehose" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
+          <mxGeometry x="544" y="852" width="72" height="29" as="geometry" />
+        </mxCell>
         <mxCell id="lu0znOIndSDiGiOmnlGc-9" value="" style="sketch=0;outlineConnect=0;fontColor=#0E0678;gradientColor=none;fillColor=#0E0678;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.internet_alt1;labelBackgroundColor=none;labelBorderColor=#0E0678;" parent="1" vertex="1">
           <mxGeometry x="-548" y="503" width="78" height="48" as="geometry" />
         </mxCell>
