@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0" version="28.2.7">
   <diagram name="Página-1" id="_rZulrzsdtSt4vWavjif">
-    <mxGraphModel dx="1587" dy="489" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2840" dy="1018" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry x="-17" y="226" width="1006" height="1024" as="geometry" />
         </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-100" value="Buffer para integração com legado&lt;br&gt;Worker / Rate Limiter / Legacy Adapter&lt;br&gt;Max 20 TPS" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
-          <mxGeometry x="584" y="291" width="361" height="352" as="geometry" />
+          <mxGeometry x="568" y="288.5" width="361" height="352" as="geometry" />
         </mxCell>
         <mxCell id="lu0znOIndSDiGiOmnlGc-17" value="Private subnet" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=14;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_security_group;grStroke=0;strokeColor=#00A4A6;fillColor=#E6F6F7;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=0;" parent="lu0znOIndSDiGiOmnlGc-5" vertex="1">
           <mxGeometry x="44" y="448" width="380" height="534" as="geometry" />
@@ -103,10 +103,10 @@
           <mxGeometry x="201.5" y="529" width="48" height="29" as="geometry" />
         </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-113" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.worker_role;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
-          <mxGeometry x="780" y="401" width="50" height="40" as="geometry" />
+          <mxGeometry x="798" y="369" width="50" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-115" value="Worker Rate Limiter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
-          <mxGeometry x="747" y="450" width="141" height="29" as="geometry" />
+          <mxGeometry x="765" y="418" width="141" height="29" as="geometry" />
         </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-121" value="SQS DLQ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
           <mxGeometry x="823" y="569" width="80" height="29" as="geometry" />
@@ -170,9 +170,6 @@
         <mxCell id="6cjDt4a6pdJpIaDc60JG-13" value="Amazon Kinesis&lt;br&gt;Data&amp;nbsp;Firehose" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-4">
           <mxGeometry x="617" y="772" width="118" height="46" as="geometry" />
         </mxCell>
-        <mxCell id="6cjDt4a6pdJpIaDc60JG-122" value="Observações/Comentários explicativos&lt;br&gt;&lt;ul&gt;&lt;li&gt;O sistema legado aceita chamadas síncronas via HTTP com throughput máximo de 20 TPS; todas as operações de liquidação exigem garantias transacionais (ACID), portanto persistimos em RDS Multi‑AZ;&amp;nbsp;&lt;/li&gt;&lt;li&gt;para absorver picos usamos enfileiramento assíncrono (SQS) e consumidores rate‑limited que garantem ≤20 TPS no legado;&amp;nbsp;&lt;/li&gt;&lt;li&gt;cada requisição inclui idempotencyKey para evitar duplicidade;&amp;nbsp;&lt;/li&gt;&lt;li&gt;falhas persistentes vão para DLQ para análise manual.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Legado: API síncrona HTTP (max 20 TPS)&lt;/li&gt;&lt;li&gt;Persistência: RDS Multi‑AZ (ACID)&lt;/li&gt;&lt;li&gt;Picos: SQS + workers rate‑limited (buffer)&lt;/li&gt;&lt;li&gt;Segurança/consistência: idempotency obrigatório&lt;/li&gt;&lt;li&gt;Erros: DLQ + alertas para falhas persistentes&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-4">
-          <mxGeometry x="596" y="46" width="450" height="312" as="geometry" />
-        </mxCell>
         <mxCell id="lu0znOIndSDiGiOmnlGc-10" value="Availability Zone" style="fillColor=none;strokeColor=#147EBA;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#147EBA;whiteSpace=wrap;html=1;fontSize=14;" parent="lu0znOIndSDiGiOmnlGc-4" vertex="1">
           <mxGeometry x="78" y="163" width="453" height="872" as="geometry" />
         </mxCell>
@@ -227,9 +224,6 @@
         </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-14" value="Amazon&lt;br&gt;DynamoDB&lt;br&gt;&lt;br&gt;Controle de &lt;br&gt;estado/transação" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-4">
           <mxGeometry x="802" y="773" width="125" height="96" as="geometry" />
-        </mxCell>
-        <mxCell id="6cjDt4a6pdJpIaDc60JG-131" value="&lt;li data-start=&quot;5651&quot; data-end=&quot;5741&quot;&gt;&lt;p data-start=&quot;5654&quot; data-end=&quot;5741&quot;&gt;&lt;strong data-start=&quot;5663&quot; data-end=&quot;5689&quot;&gt;Frontend + API Layer: &lt;/strong&gt;CloudFront, Route53, API Gateway, WAF, Cognito.&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;5742&quot; data-end=&quot;5835&quot;&gt;&lt;p data-start=&quot;5745&quot; data-end=&quot;5835&quot;&gt;&lt;strong data-start=&quot;5754&quot; data-end=&quot;5790&quot;&gt;Backend EKS Cluster (Multi-AZ)&lt;/strong&gt; com ALB único, RDS e Redis compartilhados.&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;5836&quot; data-end=&quot;5922&quot;&gt;&lt;p data-start=&quot;5839&quot; data-end=&quot;5922&quot;&gt;&lt;strong data-start=&quot;5848&quot; data-end=&quot;5877&quot;&gt;Mensageria e Integração&lt;/strong&gt;: SNS, SQS, Lambda Rate Limiter, DynamoDB).&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;5923&quot; data-end=&quot;6023&quot;&gt;&lt;p data-start=&quot;5926&quot; data-end=&quot;6023&quot;&gt;&lt;strong data-start=&quot;5935&quot; data-end=&quot;5969&quot;&gt;Observabilidade e Governança&lt;/strong&gt;: CloudWatch, X-Ray, Firehose, OpenSearch opcional).&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;6024&quot; data-end=&quot;6091&quot;&gt;&lt;p data-start=&quot;6027&quot; data-end=&quot;6091&quot;&gt;&lt;strong data-start=&quot;6036&quot; data-end=&quot;6060&quot;&gt;Segurança e Gestão&lt;/strong&gt;: KMS, Secrets Manager, IAM.&lt;/p&gt;&lt;/li&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-4">
-          <mxGeometry x="565" y="886" width="473" height="155" as="geometry" />
         </mxCell>
         <mxCell id="teR93byTSqqBIhb2rqv4-142" value="&lt;div&gt;Monitoramento e Observabilidade&lt;br&gt;&lt;/div&gt;" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;fontSize=14;" parent="lu0znOIndSDiGiOmnlGc-1" vertex="1">
           <mxGeometry x="47.99999999999999" y="702" width="273" height="153" as="geometry" />
@@ -413,6 +407,9 @@
         </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-119" value="Backend" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="70" y="873" width="72" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="6cjDt4a6pdJpIaDc60JG-122" value="Observações/Comentários explicativos&lt;br&gt;&lt;ul&gt;&lt;li&gt;O sistema legado aceita chamadas síncronas via HTTP com throughput máximo de 20 TPS; todas as operações de liquidação exigem garantias transacionais (ACID), portanto persistimos em RDS Multi‑AZ;&amp;nbsp;&lt;/li&gt;&lt;li&gt;para absorver picos escolhi enfileiramento assíncrono (SQS) e consumidores rate‑limited que garantem ≤20 TPS no legado;&amp;nbsp;&lt;/li&gt;&lt;li&gt;cada requisição inclui idempotencyKey para evitar duplicidade;&amp;nbsp;&lt;/li&gt;&lt;li&gt;falhas persistentes vão para DLQ para análise manual.&lt;/li&gt;&lt;/ul&gt;&lt;ul style=&quot;line-height: 100%;&quot;&gt;&lt;li&gt;Legado: API síncrona HTTP (max 20 TPS)&lt;/li&gt;&lt;li&gt;Persistência: RDS Multi‑AZ (ACID)&lt;/li&gt;&lt;li&gt;Picos: SQS + workers rate‑limited (buffer)&lt;/li&gt;&lt;li&gt;Segurança/consistência: idempotency obrigatório&lt;/li&gt;&lt;li&gt;Erros: DLQ + alertas para falhas persistentes&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;li data-start=&quot;5651&quot; data-end=&quot;5741&quot;&gt;&lt;p data-start=&quot;5654&quot; data-end=&quot;5741&quot;&gt;&lt;strong data-start=&quot;5663&quot; data-end=&quot;5689&quot;&gt;Frontend + API Layer: &lt;/strong&gt;CloudFront, Route53, API Gateway, WAF, Cognito.&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;5742&quot; data-end=&quot;5835&quot;&gt;&lt;p data-start=&quot;5745&quot; data-end=&quot;5835&quot;&gt;&lt;strong data-start=&quot;5754&quot; data-end=&quot;5790&quot;&gt;Backend EKS Cluster (Multi-AZ)&lt;/strong&gt; com ALB único, RDS e Redis compartilhados.&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;5836&quot; data-end=&quot;5922&quot;&gt;&lt;p data-start=&quot;5839&quot; data-end=&quot;5922&quot;&gt;&lt;strong data-start=&quot;5848&quot; data-end=&quot;5877&quot;&gt;Mensageria e Integração&lt;/strong&gt;: SNS, SQS, Lambda Rate Limiter, DynamoDB).&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;5923&quot; data-end=&quot;6023&quot;&gt;&lt;p data-start=&quot;5926&quot; data-end=&quot;6023&quot;&gt;&lt;strong data-start=&quot;5935&quot; data-end=&quot;5969&quot;&gt;Observabilidade e Governança&lt;/strong&gt;: CloudWatch, X-Ray, Firehose, OpenSearch opcional).&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;6024&quot; data-end=&quot;6091&quot;&gt;&lt;p data-start=&quot;6027&quot; data-end=&quot;6091&quot;&gt;&lt;strong data-start=&quot;6036&quot; data-end=&quot;6060&quot;&gt;Segurança e Gestão&lt;/strong&gt;: KMS, Secrets Manager, IAM&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1097" y="256" width="450" height="406" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
