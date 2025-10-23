@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0" version="28.2.7">
   <diagram name="Página-1" id="_rZulrzsdtSt4vWavjif">
-    <mxGraphModel dx="2440" dy="1018" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3205" dy="1075" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -135,6 +135,19 @@
         <mxCell id="teR93byTSqqBIhb2rqv4-150" value="IAM Roles" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" parent="lu0znOIndSDiGiOmnlGc-1" vertex="1">
           <mxGeometry x="885.5" y="1295.5" width="83" height="29" as="geometry" />
         </mxCell>
+        <mxCell id="6cjDt4a6pdJpIaDc60JG-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;dashed=1;" edge="1" parent="lu0znOIndSDiGiOmnlGc-1" source="teR93byTSqqBIhb2rqv4-125" target="teR93byTSqqBIhb2rqv4-142">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="248" y="467" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="teR93byTSqqBIhb2rqv4-125" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.xray;" parent="lu0znOIndSDiGiOmnlGc-1" vertex="1">
+          <mxGeometry x="138.5" y="435" width="63" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="6cjDt4a6pdJpIaDc60JG-27" value="AWS X-Ray" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-1">
+          <mxGeometry x="124" y="514" width="92" height="29" as="geometry" />
+        </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="lu0znOIndSDiGiOmnlGc-5" target="6cjDt4a6pdJpIaDc60JG-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -219,9 +232,6 @@
         </mxCell>
         <mxCell id="teR93byTSqqBIhb2rqv4-103" value="NAT Gateway" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" parent="lu0znOIndSDiGiOmnlGc-5" vertex="1">
           <mxGeometry x="228" y="298" width="104" height="29" as="geometry" />
-        </mxCell>
-        <mxCell id="teR93byTSqqBIhb2rqv4-125" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.xray;" parent="lu0znOIndSDiGiOmnlGc-5" vertex="1">
-          <mxGeometry x="831.5" y="185" width="63" height="63" as="geometry" />
         </mxCell>
         <mxCell id="teR93byTSqqBIhb2rqv4-92" value="Elastic Load&lt;div&gt;&amp;nbsp;Balance&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" parent="lu0znOIndSDiGiOmnlGc-5" vertex="1">
           <mxGeometry x="356" y="297" width="94" height="46" as="geometry" />
@@ -419,9 +429,6 @@
         </mxCell>
         <mxCell id="VJbWYuFzF9R8M93_kXKf-22" value="ElastiCache&amp;nbsp;&lt;div&gt;for Redis&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" parent="lu0znOIndSDiGiOmnlGc-5" vertex="1">
           <mxGeometry x="1205" y="487" width="97" height="46" as="geometry" />
-        </mxCell>
-        <mxCell id="6cjDt4a6pdJpIaDc60JG-27" value="AWS X-Ray" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
-          <mxGeometry x="817" y="264" width="92" height="29" as="geometry" />
         </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-28" value="SNS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
           <mxGeometry x="1395" y="501" width="47" height="29" as="geometry" />
