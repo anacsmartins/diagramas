@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0" version="28.2.7">
   <diagram name="Página-1" id="_rZulrzsdtSt4vWavjif">
-    <mxGraphModel dx="3745" dy="1316" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2808" dy="1247" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -434,6 +434,9 @@
         </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-13" value="Amazon Kinesis&lt;br&gt;Data&amp;nbsp;Firehose" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
           <mxGeometry x="433" y="735" width="118" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="6cjDt4a6pdJpIaDc60JG-96" value="sqs - buffer para integração legado" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-5">
+          <mxGeometry x="1379" y="294" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="lu0znOIndSDiGiOmnlGc-9" value="" style="sketch=0;outlineConnect=0;fontColor=#0E0678;gradientColor=none;fillColor=#0E0678;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=14;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.internet_alt1;labelBackgroundColor=none;labelBorderColor=#0E0678;" parent="1" vertex="1">
           <mxGeometry x="-548" y="503" width="78" height="48" as="geometry" />
