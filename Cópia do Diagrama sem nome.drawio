@@ -1,17 +1,17 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0" version="28.2.7">
   <diagram name="Página-1" id="_rZulrzsdtSt4vWavjif">
-    <mxGraphModel dx="2206" dy="873" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3745" dy="1316" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="lu0znOIndSDiGiOmnlGc-1" value="AWS Cloud" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=14;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;dashed=0;" parent="1" vertex="1">
-          <mxGeometry x="-420" y="167" width="2019" height="1441" as="geometry" />
+          <mxGeometry x="-420" y="167" width="2019" height="1400" as="geometry" />
         </mxCell>
         <mxCell id="teR93byTSqqBIhb2rqv4-142" value="&lt;div&gt;Monitoramento e Observabilidade&lt;br&gt;&lt;/div&gt;" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;fontSize=14;" parent="lu0znOIndSDiGiOmnlGc-1" vertex="1">
           <mxGeometry x="43.129999999999995" y="577" width="273" height="153" as="geometry" />
         </mxCell>
         <mxCell id="lu0znOIndSDiGiOmnlGc-4" value="Region" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=14;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_region;strokeColor=#00A4A6;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#147EBA;dashed=1;" parent="lu0znOIndSDiGiOmnlGc-1" vertex="1">
-          <mxGeometry x="362" y="23" width="1625" height="1392" as="geometry" />
+          <mxGeometry x="362" y="23" width="1625" height="1351" as="geometry" />
         </mxCell>
         <mxCell id="teR93byTSqqBIhb2rqv4-126" value="VPC Endpoints" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" parent="lu0znOIndSDiGiOmnlGc-4" vertex="1">
           <mxGeometry x="553" y="1048" width="113" height="29" as="geometry" />
@@ -20,7 +20,7 @@
           <mxGeometry x="684" y="1029" width="54.5" height="54.5" as="geometry" />
         </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-95" value="Generic group" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="lu0znOIndSDiGiOmnlGc-4">
-          <mxGeometry x="365" y="1129" width="708" height="228" as="geometry" />
+          <mxGeometry x="365" y="1129" width="708" height="204" as="geometry" />
         </mxCell>
         <mxCell id="6cjDt4a6pdJpIaDc60JG-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="lu0znOIndSDiGiOmnlGc-4" source="6cjDt4a6pdJpIaDc60JG-26" target="6cjDt4a6pdJpIaDc60JG-95">
           <mxGeometry relative="1" as="geometry">
