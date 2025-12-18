@@ -1,9 +1,96 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.7">
   <diagram name="Página-1" id="Lc6HGEeR873LDidIFv6D">
-    <mxGraphModel>
+    <mxGraphModel dx="1224" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="KNcy29ixBY2urSrahtgv-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span data-teams=&quot;true&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, system-ui, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Web&amp;quot;, sans-serif; font-size: 14px; white-space-collapse: preserve;&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: x-large;&quot;&gt;&lt;strong&gt;Sistema de Pagamentos PIX&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: x-large;&quot;&gt;&lt;strong&gt;Contexto:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;Projete um sistema simples para realizar&amp;nbsp;&lt;strong&gt;pagamentos PIX&lt;/strong&gt;&amp;nbsp;entre clientes de um banco. O sistema deve receber a solicitação de pagamento, validar saldo, realizar a transferência entre contas internas e registrar o resultado da operação.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: x-large;&quot;&gt;&lt;strong&gt;Requisitos Funcionais:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;&lt;strong&gt;Receber uma solicitação de pagamento PIX.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;&lt;strong&gt;Validar saldo&amp;nbsp;na conta do pagador.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;&lt;strong&gt;Debitar o valor&amp;nbsp;do pagador e&amp;nbsp;creditar o recebedor.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;&lt;strong&gt;Registrar o status da operação&amp;nbsp;(sucesso ou falha).&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;&lt;strong&gt;Consultar o status de um PIX&amp;nbsp;realizado.&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;span style=&quot;font-size: x-large;&quot;&gt;&lt;strong&gt;Requisitos Não Funcionais:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;Operações devem ser&amp;nbsp;&lt;strong&gt;consistentes&lt;/strong&gt;&amp;nbsp;(sem processamentos duplicados).&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;Tempo de resposta ideal:&amp;nbsp;&lt;strong&gt;menos de 200 ms&lt;/strong&gt;.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;Todos os pagamentos devem ser&amp;nbsp;&lt;strong&gt;auditáveis&lt;/strong&gt;.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;Lançamentos financeiros devem ser&amp;nbsp;&lt;strong&gt;imutáveis&lt;/strong&gt;&amp;nbsp;(não podem ser alterados).&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;50000 TPS&lt;br/&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;1000 transações por conta&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;span style=&quot;font-size: x-large;&quot;&gt;&lt;strong&gt;Desafios Técnicos:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;Garantir&amp;nbsp;&lt;strong&gt;idempotência&lt;/strong&gt;&amp;nbsp;na requisição de pagamento.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;Evitar&amp;nbsp;&lt;strong&gt;corrida de concorrência&lt;/strong&gt;&amp;nbsp;entre duas tentativas de débito.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;Registrar eventos de crédito e débito de forma&amp;nbsp;&lt;strong&gt;transacional&lt;/strong&gt;.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: inherit;&quot;&gt;Permitir&amp;nbsp;&lt;strong&gt;consulta rápida&lt;/strong&gt;&amp;nbsp;de status (ex.: cache ou read model).&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="1160" width="290" x="50" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-2" parent="1" style="shape=mxgraph.mockup.containers.marginRect;rectMarginTop=10;strokeColor=#666666;strokeWidth=1;dashed=0;rounded=1;arcSize=5;recursiveResize=0;html=1;whiteSpace=wrap;" value="" vertex="1">
+          <mxGeometry height="549" width="690" x="420" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-3" parent="KNcy29ixBY2urSrahtgv-2" style="shape=rect;strokeColor=none;fillColor=#008cff;strokeWidth=1;dashed=0;rounded=1;arcSize=20;fontColor=#ffffff;fontSize=17;spacing=2;spacingTop=-2;align=left;autosize=1;spacingLeft=4;resizeWidth=0;resizeHeight=0;perimeter=none;html=1;whiteSpace=wrap;" value="AWS Cloud" vertex="1">
+          <mxGeometry height="30" width="135" x="5" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-9" edge="1" parent="KNcy29ixBY2urSrahtgv-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="219" as="sourcePoint" />
+            <mxPoint x="191" y="289" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-16" edge="1" parent="KNcy29ixBY2urSrahtgv-2" source="KNcy29ixBY2urSrahtgv-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KNcy29ixBY2urSrahtgv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-5" parent="KNcy29ixBY2urSrahtgv-2" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#8C4FFF;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.api_gateway;" value="" vertex="1">
+          <mxGeometry height="58" width="58" x="70" y="161" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-41" edge="1" parent="KNcy29ixBY2urSrahtgv-2" source="KNcy29ixBY2urSrahtgv-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KNcy29ixBY2urSrahtgv-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-6" parent="KNcy29ixBY2urSrahtgv-2" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="380" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-8" parent="KNcy29ixBY2urSrahtgv-2" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.waf;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="180" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-17" edge="1" parent="KNcy29ixBY2urSrahtgv-2" source="KNcy29ixBY2urSrahtgv-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KNcy29ixBY2urSrahtgv-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-11" parent="KNcy29ixBY2urSrahtgv-2" style="rounded=1;whiteSpace=wrap;html=1;" value="Cognito" vertex="1">
+          <mxGeometry height="40" width="60" x="210" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-33" edge="1" parent="KNcy29ixBY2urSrahtgv-2" source="KNcy29ixBY2urSrahtgv-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="KNcy29ixBY2urSrahtgv-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-12" parent="KNcy29ixBY2urSrahtgv-2" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" value="" vertex="1">
+          <mxGeometry height="48" width="48" x="366" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-13" parent="KNcy29ixBY2urSrahtgv-2" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#8C4FFF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.network_load_balancer;" value="" vertex="1">
+          <mxGeometry height="38" width="38" x="301" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-19" parent="KNcy29ixBY2urSrahtgv-2" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Postgre&lt;br&gt;ACID" vertex="1">
+          <mxGeometry height="50" width="70" x="420" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-32" parent="KNcy29ixBY2urSrahtgv-2" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Postgre&lt;br&gt;ACID" vertex="1">
+          <mxGeometry height="50" width="70" x="440" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-34" edge="1" parent="KNcy29ixBY2urSrahtgv-2" source="KNcy29ixBY2urSrahtgv-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="KNcy29ixBY2urSrahtgv-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-35" parent="KNcy29ixBY2urSrahtgv-2" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.kafka;" value="" vertex="1">
+          <mxGeometry height="46.19" width="62.35" x="510" y="203.81" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-36" edge="1" parent="KNcy29ixBY2urSrahtgv-2" source="KNcy29ixBY2urSrahtgv-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="542" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-37" edge="1" parent="KNcy29ixBY2urSrahtgv-2" source="KNcy29ixBY2urSrahtgv-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="KNcy29ixBY2urSrahtgv-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="227" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-38" parent="KNcy29ixBY2urSrahtgv-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SALDO" vertex="1">
+          <mxGeometry height="30" width="60" x="360" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-39" parent="KNcy29ixBY2urSrahtgv-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="PIX" vertex="1">
+          <mxGeometry height="20" width="40" x="320" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-42" parent="KNcy29ixBY2urSrahtgv-2" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.kafka;" value="" vertex="1">
+          <mxGeometry height="46.19" width="62.35" x="510" y="271.80999999999995" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-44" parent="KNcy29ixBY2urSrahtgv-2" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="event_id" vertex="1">
+          <mxGeometry height="30" width="60" x="572.35" y="173.81" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-45" parent="KNcy29ixBY2urSrahtgv-2" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud;strokeColor=#AAB7B8;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#AAB7B8;dashed=0;" value="AWS Cloud" vertex="1">
+          <mxGeometry height="570" width="740" x="-50" y="-21" as="geometry" />
+        </mxCell>
+        <mxCell id="KNcy29ixBY2urSrahtgv-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="60" width="30" x="360" y="650" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
